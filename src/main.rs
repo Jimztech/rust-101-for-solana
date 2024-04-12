@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 fn main() {
     // unsigned integer
     // u8, u16, u32, u64, u128
@@ -38,7 +40,7 @@ fn main() {
     // println!("Vector => {:?}", vector);
 
     // hash map is used for grouping 2 different data types as key value pair
-    let mut hash_map = std::collections::HashMap::new();
+    let mut hash_map = HashMap<&str, i32> = HashMap::new();
     hash_map.insert("Solana", 100);
     hash_map.insert("age", 2);
     // println!("Hash Map => {:?}", hash_map);
